@@ -37,13 +37,13 @@ The model uses a **Linear Regression** approach to predict house prices. Steps i
 
 The project features a simple user interface built using **React**, deployed on **Vercel**. Users can input the necessary details (location, BHK, baths, and sqft) to get a price prediction.
 
-**UI Link:** [Insert Vercel Link Here]
+**UI Link:** \*\*to be provided soon...
 
 ## API
 
 The prediction API is built using **Flask** and is deployed on **Render**. The API accepts house details and returns a predicted price.
 
-**API Link:** [Insert Render Link Here]
+**API Link:** \*\*to be provided soon...
 
 ## Setup
 
