@@ -2,28 +2,23 @@ import json
 import pickle
 
 __locations = None
-___data_colums = None
-___model = None
+__data_colums = None
+__model = None
 
 def get_locations():
     return __locations
 
 def load_saved_artifacts(): 
-    print("loading artifacts...")
+    # print("loading artifacts...")
 
-    global ___locations
-    global ___data_colums 
+    global __locations
+    global __data_colums 
 
-    with open("./artifacts/columns.json", "r") as f:
-        ___data_colums = json.load(f)['data_columns']
-        __locations = ___data_colums[3:]
+    with open("C:/Users/HP/OneDrive/Desktop/HousePricePrediction/server/artifacts/columns.json", "r") as f:
+        __data_colums = json.load(f)['data_columns']
+        __locations = __data_colums[3:]
 
-    with open("./artifacts/banglore_home_prices_model.pickle", "rb") as f:
-        ___model = pickle.load(f)
+    with open("C:/Users/HP/OneDrive/Desktop/HousePricePrediction/server/artifacts/banglore_home_prices_model.pickle", "rb") as f:
+        __model = pickle.load(f)
 
-    print("loading artifacts is done...")
-
-if __name__ == "__main__":
-    load_saved_artifacts()
-    print(get_locations())
-    
+    # print("loading artifacts is done...")
