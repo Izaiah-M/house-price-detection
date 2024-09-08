@@ -40,5 +40,4 @@ def predict_home_price():
 
 if __name__ == "__main__":
     print("starting home price prediction flask server...")
-    port = int(os.getenv("PORT", 5000))  # Default to port 5000 if PORT is not found in the .env file
-    app.run(port=port)
+    app.run(debug=True, port=int(os.getenv("PORT", 5000)))
