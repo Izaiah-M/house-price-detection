@@ -1,5 +1,10 @@
 from flask import Flask, request, jsonify
 import service
+import os
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 app = Flask(__name__)
 
@@ -35,4 +40,5 @@ def predict_home_price():
 
 if __name__ == "__main__":
     print("starting home price prediction flask server...")
-    app.run()
+    port = int(os.getenv("PORT", 5000))  # Default to port 5000 if PORT is not found in the .env file
+    app.run(port=port)
