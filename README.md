@@ -41,9 +41,18 @@ The project features a simple user interface built using **React**, deployed on 
 
 ## API
 
-The prediction API is built using **Flask** and is deployed on **Render**. The API accepts house details and returns a predicted price.
+The **House Price Prediction API** is built using **Flask** and deployed on **Render**. It allows users to input house details and returns a predicted price based on the model.
 
-**API Link:** [House price prediction server](https://house-price-detection.onrender.com)
+### API Endpoints:
+
+- **GET** `/locations` - Returns the list of locations the model was trained on.
+- **POST** `/predict_home_price` - Accepts house details (like location, BHK, sqft, etc.) and returns the predicted price.
+
+### Try the API
+
+You can access and test the API by visiting the link below:
+
+**API Link:** [House Price Prediction Server](https://house-price-detection.onrender.com)
 
 ## Setup
 
