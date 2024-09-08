@@ -43,7 +43,7 @@ The project features a simple user interface built using **React**, deployed on 
 
 The prediction API is built using **Flask** and is deployed on **Render**. The API accepts house details and returns a predicted price.
 
-**API Link:** \*\*to be provided soon...
+**API Link:** [House price prediction server](https://house-price-detection.onrender.com)
 
 ## Setup
 
